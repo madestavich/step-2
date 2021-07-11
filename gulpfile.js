@@ -60,7 +60,7 @@ function styles() {
     .pipe(autoprefixer())
     .pipe(concat("styles.min.css"))
     .pipe(sourcemaps.write())
-    .pipe(dest("./dist"))
+    .pipe(dest("./dist/styles"))
     .pipe(browserSync.reload({ stream: true }));
 }
 
