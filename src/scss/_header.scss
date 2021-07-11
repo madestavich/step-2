@@ -1,0 +1,76 @@
+.header {
+  background-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-style: normal;
+  font-style: normal;
+
+  @media (min-width: 320px) {
+    background-image: url(../img/bg-small.png);
+  }
+  @media (min-width: 481px) {
+    background-image: url(../img/bg-md.png);
+  }
+  @media (min-width: 993px) {
+    background-image: url(../img/bg-large.png);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    &--row {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    @media (max-width: 993px) {
+      background-color: #27262a;
+    }
+  }
+
+  &__content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 50px 0 416px;
+  }
+
+  &__logo {
+    margin: 32px 0 30px 16px;
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    color: #ffffff;
+    margin-bottom: 19px;
+  }
+
+  &__slogan {
+    font-size: 18px;
+    line-height: 24px;
+    color: #8d81ac;
+    margin: 0 11px 14px;
+    padding: 0 12px;
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #848e97;
+  }
+}
+
+.menu {
+  display: flex;
+  @media (max-width: 480px) {
+    display: none;
+  }
+}
