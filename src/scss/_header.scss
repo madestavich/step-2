@@ -1,0 +1,197 @@
+.header {
+  background-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-style: normal;
+  font-style: normal;
+
+  @media (min-width: 320px) {
+    background-image: url(../img/bg-small.png);
+  }
+  @media (min-width: 481px) {
+    background-image: url(../img/bg-md.png);
+  }
+  @media (min-width: 993px) {
+    background-image: url(../img/bg-large.png);
+  }
+
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 0px;
+    grid-template-areas: "logo buy burger";
+    background-color: #27262a;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (min-width: 481px) {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 0.5fr;
+      grid-template-areas: "logo buy" "navigation navigation";
+    }
+
+    @media (min-width: 992px) {
+      background-color: #000000;
+      grid-template-columns: 1fr 2fr 1fr;
+      grid-template-areas: "logo navigation navigation buy";
+    }
+  }
+
+  &__content {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    padding: 50px 0 416px;
+
+    @media (min-width: 481px) {
+      padding: 68px 0 450px;
+    }
+    @media (min-width: 993px) {
+      padding: 68px 0 490px;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-self: start;
+    margin: 32px 0 30px 16px;
+
+    &--area {
+      grid-area: logo;
+    }
+
+    .logo {
+      margin-right: 17px;
+
+      &__title {
+        font-family: $optional-font;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 16px;
+        text-transform: uppercase;
+        color: #8d81ac;
+        text-decoration: none;
+
+        @media (max-width: 480px) {
+          display: none;
+        }
+      }
+    }
+
+    .logo--hover {
+      display: none;
+    }
+
+    @media (min-width: 481px) {
+      margin: 22px 0 22px 20px;
+    }
+
+    @media (min-width: 993px) {
+      margin: 30px 17px 22px 20px;
+    }
+
+    &:hover {
+      cursor: pointer;
+
+      .logo {
+        display: none;
+      }
+
+      .logo__title {
+        color: #ffffff;
+      }
+
+      .logo--hover {
+        display: block;
+        margin-right: 17px;
+      }
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    font-size: 48px;
+    line-height: 48px;
+    color: #ffffff;
+    margin-bottom: 19px;
+
+    @media (min-width: 481px) {
+      font-size: 72px;
+      line-height: 72px;
+    }
+    @media (min-width: 993px) {
+      font-size: 82px;
+      line-height: 82px;
+    }
+  }
+
+  &__slogan {
+    font-size: 18px;
+    line-height: 24px;
+    color: #8d81ac;
+    margin: 0 11px 14px;
+    padding: 0 12px;
+
+    @media (min-width: 481px) {
+      font-size: 24px;
+      margin: 0 11px 19px;
+    }
+    @media (min-width: 993px) {
+      font-size: 30px;
+      line-height: 30px;
+    }
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #848e97;
+
+    @media (min-width: 481px) {
+      font-size: 16px;
+      line-height: 16px;
+    }
+  }
+  &__nav {
+    display: flex;
+    justify-content: center;
+    grid-area: navigation;
+
+    @media (max-width: 480px) {
+      display: none;
+    }
+
+    &--area {
+      grid-area: navigation;
+    }
+  }
+}
+
+.menu {
+  display: flex;
+  @media (max-width: 480px) {
+    display: none;
+  }
+  &__item {
+    margin-right: 47px;
+    &:first-child {
+      margin-left: 47px;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 18px;
+    color: #8d81ac;
+    &:hover {
+      color: #ffffff;
+    }
+  }
+}
