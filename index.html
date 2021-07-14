@@ -10,15 +10,21 @@
   <body class="page">
     <header class="page__header header">
       <div class="container">
-        <div class="header__wrapper">
-          <div class="header__wrapper header__wrapper--row">
-            <img src="./dist/img/Logo 3.svg" alt="logo" class="header__logo" />
-            <button class="buy">Buy Now</button>
-            <button class="burger">
-              <span class="burger__line"></span>
-            </button>
+        <div class="header__grid">
+          <div class="header__logo header__logo--area">
+            <img src="./dist/img/Logo.png" alt="logo" class="logo" />
+            <img
+              src="./dist/img/logo-hover.png"
+              alt="logo"
+              class="logo--hover"
+            />
+            <a href="#" class="logo__title">forkio</a>
           </div>
-          <nav class="header__nav nav">
+          <button class="buy buy--area">Buy Now</button>
+          <button class="burger burger--area">
+            <span class="burger__line"></span>
+          </button>
+          <nav class="header__nav header__nav-area nav">
             <ul class="nav__list menu">
               <li class="menu__item">
                 <a class="menu__link" href="#"> Overview </a>
