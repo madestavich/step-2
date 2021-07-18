@@ -125,6 +125,10 @@ blockquote {
   }
 }
 
+* a {
+  text-decoration: none;
+}
+
 q {
   &:before,
   &:after {

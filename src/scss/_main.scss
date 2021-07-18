@@ -9,4 +9,292 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
+
+}
+
+// section REVOLUTIONARY EDITOR 
+.app-text {
+  padding-top: 51px;
+  color: $grey-text;
+  font-size: 14px;
+}
+
+
+.flex-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.flex-wrapper--center {
+  justify-content: center;
+}
+
+.about {
+  text-align: center;
+  padding-bottom: 88px;
+  &__tittle {
+    color: $btn-bg;
+    font-size: 26px;
+    font-weight: 700;
+    margin: 120px 0 24px;
+    line-height: 50px;
+    text-transform: uppercase;
+  }
+
+  &__description {
+    font-family: $font-family;
+    color: $black-color;
+    font-size: 14px;
+    text-align: center;
+    @include width80;
+    margin-bottom: 35px;
+  }
+  &__github-link {
+    font-size: 12px;
+    font-weight: 700;
+    color: $black-color;
+    padding: 6px 10px;
+    border: 1px solid #d6d6d6;
+    background: #f3f3f3;
+    border-right: 0;
+    border-radius: 2px;
+  }
+  &__github-link_text {
+    margin-left: 6px;
+  }
+
+  &__github-link_count {
+    font-size: 12px;
+    font-weight: 700;
+    padding: 8px 10px;
+    border: 1px solid #d6d6d6;
+    border-radius: 2px;
+    margin-right: 15px;
+    color: $black-color;
+
+  }
+  &__github-links-container {
+    margin-bottom: 20px;
+  }
+
+}
+
+@media screen and (min-width: #{($landscape-mobile-normal)}) {
+  .about__tittle {
+    font-size: 42px;
+  }
+  .about__description {
+    font-size: 16px;
+  }
+
+}
+
+
+
+@media screen and (min-width: #{($landscape-tablet)}) {
+  .about__tittle {
+    font-size: 54px;
+  }
+  .about__description {
+    font-size: 16px;
+  }
+}
+
+
+
+// section REVOLUTIONARY EDITOR TOOLS
+
+
+.tools {
+  background-color: rgb(244, 244, 244);
+
+  &__flex-body {
+    position: relative;
+    width: 100%;
+  }
+
+  &__title {
+    padding-top: 20px;
+  }
+
+  &__text {
+    font-family: $font-family;
+    font-weight: 700;
+    text-align: center;
+    font-size: 32px;
+    color: #8d81ac;
+  }
+
+  
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 40px;
+  }
+
+  &__item {
+    text-align: center;
+    padding-top: 34px;
+  }
+
+
+  &__item-title {
+    font-family: $font-family;
+    color: #323232;
+    font-size: 16px;
+    padding-top: 22px;
+
+  }
+
+  &__item-text {
+    font-family: $font-family;
+    color: #848e97;
+    font-size: 14px;
+    line-height: 15px;
+    padding-top: 16px;
+  }
+
+  &__editor {
+    padding-bottom: 390px;
+    position: relative;
+    right: -10px;
+  }
+
+  
+}
+
+@media screen and (min-width: #{($landscape-mobile-normal)}) {
+  .tools {
+    &__text {
+      font-size: 46px;
+    }
+
+    &__item {
+      padding-top: 46px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+
+      &-title {
+        padding: 0;
+      }
+
+      &-body {
+        text-align: left;
+      }
+
+      &-text {
+        padding-top: 21px;
+      }
+    }
+
+    &__img {
+      &-search {
+        height: 64px;
+        padding-left: 26px;
+        padding-right: 24px;
+      }
+
+      &-speed {
+        height: 80px;
+        padding-left: 27px;
+        padding-right: 44px;
+
+      }
+
+      &-experimental {
+        height: 84px;
+        padding-left: 42px;
+        padding-right: 59px;
+
+      }
+
+      &-watch {
+        height: 71px;
+        padding-left: 32px;
+        padding-right: 57px;
+
+      }
+
+    }
+
+    &__editor {
+      padding-bottom: 525px;
+
+}
+  }
+}
+
+
+@media screen and (min-width: #{($landscape-tablet)}) {
+  .tools {
+    &__title {
+      position: absolute;
+      right: 0;
+    }
+    &__flex-body{
+      padding-top: 40px;
+
+    }
+
+    &__text {
+      font-size: 44px;
+    }
+
+    &__list {
+      width: 40%;
+      padding-bottom: 60px;
+    }
+
+    &__item {
+      padding-top: 37px;
+    }
+
+    &__item-text {
+      padding-top: 17px;
+    }
+    &__editor{
+      position: absolute;
+      top: 116px;
+      right: -10;
+    }
+
+    &__editor-img {
+      background-position: 126px -20px;
+      height: 455px;
+    }
+  }
+}
+
+.tools__editor-img {
+  background-image: url(../img/tools/editor.png);
+  background-repeat: no-repeat;
+  width: 317px;
+  min-height: 497px;
+  position: absolute;
+  right: 0;
+}
+
+
+
+@media screen and (min-width: #{($landscape-mobile-normal)}) {
+  .tools {
+    &-img {
+      background-image: url(../img/tools/editor_480.png);
+      width: 460px;
+      height: 510px;
+    }
+  }
+}
+
+@media screen and (min-width: #{($landscape-mobile-big)}) {
+  .tools {
+    &__editor-img {
+      background-image: url(../img/tools/editor_768.png);
+      width: 700px;
+    }
+  }
 }
