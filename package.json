@@ -19,6 +19,7 @@
     "gulp-js-minify": "0.0.3",
     "gulp-sass": "^5.0.0",
     "gulp-sourcemaps": "^3.0.0",
+    "gulp-wait": "0.0.2",
     "node-sass": "^6.0.0"
   }
 }

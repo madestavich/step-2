@@ -10,6 +10,7 @@ const cleanCSS = require("gulp-clean-css");
 const clean = require("gulp-clean");
 const autoprefixer = require("gulp-autoprefixer");
 const imgMin = require("gulp-imagemin");
+const wait = require("gulp-wait");
 
 //? starting live server -------------------------------------------------------
 
@@ -50,6 +51,7 @@ function clear() {
 function styles() {
   return src("./src/scss/styles.scss")
     .pipe(sourcemaps.init())
+    .pipe(wait(200))
     .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
     .pipe(
       cleanCSS({ compatibility: "ie8", debug: true }, (details) => {
