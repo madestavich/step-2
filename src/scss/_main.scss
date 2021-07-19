@@ -104,7 +104,7 @@
 
 
 
-// section REVOLUTIONARY EDITOR TOOLS
+// section REVOLUTIONARY EDITOR ------ (TOOLS)
 
 
 .tools {
@@ -305,14 +305,31 @@
 
 
 
+.pricing {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-style: normal;
+  font-style: normal;
 
-
+  @media (min-width: 320px) {
+    background-image: url(../img/layer.png);
+  }
+  @media (min-width: 481px) {
+    background-image: url(../img/layer.png);
+  }
+  @media (min-width: 993px) {
+    background-image: url(../img/layer.png);
+  }
+}
 
 
 .pricing {
-  background: #4a384d;
-  text-align: center;
-  padding-bottom: 97px;
+  // background-image: url(../img/layer.png);
+  // background-size:cover;
+  // text-align: center;
+  // padding-bottom: 97px;
 
   &__title {
     padding: 50px 0;
