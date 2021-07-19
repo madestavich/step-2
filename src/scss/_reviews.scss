@@ -1,0 +1,96 @@
+.reviews {
+  background-image: url("../img/reviews_bg_med.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-style: normal;
+  padding: 57px 0 14px;
+
+  &__title {
+    text-align: center;
+    color: $white-text;
+    font-family: $main-font;
+
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+    margin-bottom: 53px;
+  }
+
+  @media (min-width: 993px) {
+    background-image: url(../img/reviews-bg-large.jpg);
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+
+    @media (min-width: 768px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 1200px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 31px;
+  }
+
+  &__text {
+    text-align: center;
+    font-family: $optional-font;
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: $white-text;
+
+    &:nth-child(1) {
+      margin: 33px 0 45px;
+    }
+    &:nth-child(2) {
+      margin: 29px 0 45px;
+    }
+    &:nth-child(3) {
+      margin: 22px 0 45px;
+    }
+    &:nth-child(4) {
+      margin: 33px 0 45px;
+    }
+    &:nth-child(5) {
+      margin: 28px 0 45px;
+    }
+    &:nth-child(6) {
+      margin: 24px 0 37px;
+    }
+  }
+  &__comment {
+    font-family: $optional-font;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    text-align: center;
+    color: #a291a5;
+    padding: 0 34px 22px;
+  }
+}
+
+.line--decoration {
+  height: 2px;
+  width: 245px;
+  background: #645766;
+  border: none;
+  @media (min-width: 768px) {
+    width: 555px;
+  }
+  @media (min-width: 1200px) {
+    width: 780px;
+  }
+}

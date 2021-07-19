@@ -9,16 +9,15 @@
 .container {
   max-width: 1200px;
   margin: 0 auto;
-
+  padding: 0 10px;
 }
 
-// section REVOLUTIONARY EDITOR 
+// section REVOLUTIONARY EDITOR
 .app-text {
   padding-top: 51px;
   color: $grey-text;
   font-size: 14px;
 }
-
 
 .flex-wrapper {
   display: flex;
@@ -73,12 +72,10 @@
     border-radius: 2px;
     margin-right: 15px;
     color: $black-color;
-
   }
   &__github-links-container {
     margin-bottom: 20px;
   }
-
 }
 
 @media screen and (min-width: #{($landscape-mobile-normal)}) {
@@ -88,10 +85,7 @@
   .about__description {
     font-size: 16px;
   }
-
 }
-
-
 
 @media screen and (min-width: #{($landscape-tablet)}) {
   .about__tittle {
@@ -102,10 +96,7 @@
   }
 }
 
-
-
 // section REVOLUTIONARY EDITOR TOOLS
-
 
 .tools {
   background-color: rgb(244, 244, 244);
@@ -127,8 +118,6 @@
     color: #8d81ac;
   }
 
-  
-
   &__list {
     display: flex;
     flex-direction: column;
@@ -140,13 +129,11 @@
     padding-top: 34px;
   }
 
-
   &__item-title {
     font-family: $font-family;
     color: #323232;
     font-size: 16px;
     padding-top: 22px;
-
   }
 
   &__item-text {
@@ -162,8 +149,6 @@
     position: relative;
     right: -10px;
   }
-
-  
 }
 
 @media screen and (min-width: #{($landscape-mobile-normal)}) {
@@ -202,32 +187,26 @@
         height: 80px;
         padding-left: 27px;
         padding-right: 44px;
-
       }
 
       &-experimental {
         height: 84px;
         padding-left: 42px;
         padding-right: 59px;
-
       }
 
       &-watch {
         height: 71px;
         padding-left: 32px;
         padding-right: 57px;
-
       }
-
     }
 
     &__editor {
       padding-bottom: 525px;
-
-}
+    }
   }
 }
-
 
 @media screen and (min-width: #{($landscape-tablet)}) {
   .tools {
@@ -235,9 +214,8 @@
       position: absolute;
       right: 0;
     }
-    &__flex-body{
+    &__flex-body {
       padding-top: 40px;
-
     }
 
     &__text {
@@ -256,7 +234,7 @@
     &__item-text {
       padding-top: 17px;
     }
-    &__editor{
+    &__editor {
       position: absolute;
       top: 116px;
       right: -10;
@@ -277,8 +255,6 @@
   position: absolute;
   right: 0;
 }
-
-
 
 @media screen and (min-width: #{($landscape-mobile-normal)}) {
   .tools {

@@ -36,6 +36,9 @@
       background-color: #000000;
       grid-template-columns: 1fr 2fr 1fr;
       grid-template-areas: "logo navigation navigation buy";
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 10px;
     }
   }
 
