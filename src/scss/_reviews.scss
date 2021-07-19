@@ -1,9 +1,8 @@
 .reviews {
-  background-image: url("../img/reviews_bg_med.jpg");
+  background-image: url("../img/reviews-bg-large.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
   font-style: normal;
   padding: 57px 0 14px;
 
@@ -27,10 +26,10 @@
     grid-template-columns: 1fr;
     justify-content: center;
 
-    @media (min-width: 768px) {
+    @media (min-width: 481px) {
       grid-template-columns: 1fr 1fr;
     }
-    @media (min-width: 1200px) {
+    @media (min-width: 993px) {
       grid-template-columns: 1fr 1fr 1fr;
     }
   }
@@ -87,10 +86,10 @@
   width: 245px;
   background: #645766;
   border: none;
-  @media (min-width: 768px) {
+  @media (min-width: 481px) {
     width: 555px;
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 993px) {
     width: 780px;
   }
 }
