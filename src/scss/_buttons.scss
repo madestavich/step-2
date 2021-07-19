@@ -31,6 +31,7 @@
   border: none;
   position: relative;
   margin-right: 15px;
+  cursor: pointer;
 
   &--area {
     grid-area: burger;
@@ -41,7 +42,7 @@
     height: 3px;
     background-color: #fff;
     border-radius: 5px;
-    transition: transform 0s;
+    transition: ease-in 0.2s;
 
     &::before,
     &::after {
@@ -110,9 +111,4 @@
     color: #8d81ac;
     cursor: pointer;
   }
-}
-
-.test {
-  display: block;
-  empty-cells: show;
 }

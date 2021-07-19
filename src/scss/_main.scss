@@ -43,7 +43,7 @@
   }
 
   &__description {
-    font-family: $font-family;
+    font-family: $main-font;
     color: $black-color;
     font-size: 14px;
     text-align: center;
@@ -111,7 +111,7 @@
   }
 
   &__text {
-    font-family: $font-family;
+    font-family: $main-font;
     font-weight: 700;
     text-align: center;
     font-size: 32px;
@@ -130,14 +130,14 @@
   }
 
   &__item-title {
-    font-family: $font-family;
+    font-family: $main-font;
     color: #323232;
     font-size: 16px;
     padding-top: 22px;
   }
 
   &__item-text {
-    font-family: $font-family;
+    font-family: $main-font;
     color: #848e97;
     font-size: 14px;
     line-height: 15px;
@@ -278,9 +278,29 @@
 // pricing section !!!
 
 .pricing {
-  background: #4a384d;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   text-align: center;
-  padding-bottom: 97px;
+  font-style: normal;
+  font-style: normal;
+
+  @media (min-width: 320px) {
+    background-image: url(../img/layer.png);
+  }
+  @media (min-width: 481px) {
+    background-image: url(../img/layer.png);
+  }
+  @media (min-width: 993px) {
+    background-image: url(../img/layer.png);
+  }
+}
+
+.pricing {
+  // background-image: url(../img/layer.png);
+  // background-size:cover;
+  // text-align: center;
+  // padding-bottom: 97px;
 
   &__title {
     padding: 50px 0;
@@ -343,6 +363,7 @@
     background: #403042;
   }
   &__item_btn-mod {
+    color: $white-text;
     margin-bottom: 47px;
     text-transform: uppercase;
     background: rgba(255, 255, 255, 0.15);
