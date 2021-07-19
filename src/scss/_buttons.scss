@@ -41,7 +41,7 @@
     height: 3px;
     background-color: #fff;
     border-radius: 5px;
-    transition: transform 0.4s;
+    transition: transform 0s;
 
     &::before,
     &::after {
@@ -53,12 +53,25 @@
       height: 3px;
       background-color: #fff;
       border-radius: 5px;
-      transition: transform 0.4s;
+      transition: ease 0.4s;
     }
 
     &::after {
       width: 26px;
       top: 10px;
+    }
+
+    &--active {
+      transform: rotate(220deg);
+      &::before {
+        top: 0;
+        right: 0;
+      }
+      &::after {
+        transform: rotate(100deg);
+        top: 0;
+        right: 0;
+      }
     }
   }
 
